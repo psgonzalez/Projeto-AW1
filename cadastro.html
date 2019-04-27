@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lucas Ivars Cadima Ciziks e Paula Silva Gonzalez">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!--Criação do menu-->
+    <header class="container">
+        <button class="btn-menu">
+            <img class="menu-icon" src="img/menu.png" alt="">
+        </button>
+        <nav class="menu">
+            <a class="btn-close">X</a>
+            <ul>
+                <li><a href="index.html">Untitled Goose Game</a></li>                    
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Formulário-->
+    <main>
+        <h1>Cadastre-se agora para comprar e receber atualizações sobre Untitled Goose Game!</h1>
+        <form action="." class="formulario">
+            <div class="row">
+                <div class="col-25">
+                    <label for="nome-id">Nome: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="nome" id="nome-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="cep-id">CEP: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="cep" id="cep-id" placeholder="00000-000" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="logradouro-id">Logradouro: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="logradouro" id="logradouro-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="complemento-id">Complemento: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="complemento" id="complemento-id">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="numero-id">Número: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="number" name="numero" id="numero-id" min="0" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="bairro-id">Bairro: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="bairro" id="bairro-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="cidade-id">Cidade: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="cidade" id="cidade-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="uf-id">UF: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="uf" id="uf-id" maxlength="2" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email-id">E-mail: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="email" name="email" id="email-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="confirma-email-id">Confirme seu e-mail: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="email" name="confirma-email" id="confirma-email-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="senha-id">Senha: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="password" name="senha" id="senha-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="confirma-senha-id">Confirme sua senha: </label><br>
+                </div>
+                <div class="col-75">
+                    <input type="password" name="confirma-senha" id="confirma-senha-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="termos" id="termos-id" required>
+                <label for="termos-id">Concordo com os Termos de Utilização</label>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="atualizacoes" id="atualizacoes-id">
+                <label for="atualizacoes-id">Desejo receber atualizações e notícias sobre Untitled Goose
+                        Game e outros jogos da House House
+                </label>
+            </div>
+            <div class="row">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
