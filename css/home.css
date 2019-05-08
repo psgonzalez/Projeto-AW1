@@ -1,0 +1,33 @@
+section{
+    margin-top: 10%;
+}
+
+#section1 img {
+    float: left;
+    width: 15%;
+    height:15%;
+
+}
+
+#section1 p{
+    vertical-align: sub;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 15%;
+    width: 35%;
+}
+
+#section2 img {
+    /* float: right; */
+    width: 10%;
+    height:10%;
+
+}
+
+#section2 p{
+    margin-left: 2%;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 15%;
+    width: 30%;
+}
