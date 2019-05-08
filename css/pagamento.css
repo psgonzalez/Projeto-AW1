@@ -7,6 +7,7 @@ table, th, td {
 
 table {
     margin: 0 auto;
+    vertical-align: middle;
 }
 
 table caption {
@@ -16,13 +17,15 @@ table caption {
 
 .carrinho {
     height: 30vh;
+    margin-bottom: 10%;
+    display: flexbox;
 }
 
 .identificacao {
     height: 100vh;
-    margin-top: 10%;
+    width: 100%;
     background-color: #2ABF5E;
-    text-align: center;
+    display: table;
 }
 
 .identificacao h1 {
@@ -32,12 +35,25 @@ table caption {
 .identificacao button {
     background-color: #1C8741;
     border-radius: 15px;
-    height: 11.8vh;
-    width: 74.7vw;
+    height: 10vh;
+    width: 50vw;
     margin-top: 8%;
     margin-bottom: 8%;
 }
 
 .identificacao button:last-child {
     margin-bottom: 0;
+}
+
+.opcoes-id{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 600px) {
+    .carrinho {
+        margin-bottom: 5%;
+        height: 40vh;
+    }
 }
