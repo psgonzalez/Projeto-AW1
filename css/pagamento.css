@@ -1,3 +1,10 @@
+.carrinho {
+    height: 20%;
+    margin-bottom: 10%;
+    display: inline-flexbox;
+}
+
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -15,14 +22,8 @@ table caption {
     margin-bottom: 3%;
 }
 
-.carrinho {
-    height: 30vh;
-    margin-bottom: 10%;
-    display: flexbox;
-}
-
 .identificacao {
-    height: 100vh;
+    height: 66vh;
     width: 100%;
     background-color: #2ABF5E;
     display: table;
@@ -52,8 +53,16 @@ table caption {
 }
 
 @media screen and (min-width: 600px) {
-    .carrinho {
-        margin-bottom: 5%;
-        height: 40vh;
+    
+    table{
+        font-size: 24px;
+    }
+
+    th, td {
+        font-size: 22px;
+    }
+
+    .identificacao button {
+        margin-top: 5%;
     }
 }

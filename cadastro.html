@@ -30,104 +30,106 @@
     <main>
         <h1>Cadastre-se agora para comprar e receber atualizações sobre Untitled Goose Game!</h1>
         <form action="." class="formulario">
-            <div class="row">
-                <div class="col-25">
-                    <label for="nome-id">Nome: </label><br>
+            <div id="campos">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nome-id">Nome: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="nome" id="nome-id" required>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <input type="text" name="nome" id="nome-id" required>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="cep-id">CEP: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="cep" id="cep-id" placeholder="00000-000" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="logradouro-id">Logradouro: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="logradouro" id="logradouro-id" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="complemento-id">Complemento: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="complemento" id="complemento-id">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="numero-id">Número: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" name="numero" id="numero-id" min="0" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="bairro-id">Bairro: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="bairro" id="bairro-id" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="cidade-id">Cidade: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="cidade" id="cidade-id" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="uf-id">UF: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="uf" id="uf-id" maxlength="2" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email-id">E-mail: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" id="email-id" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="confirma-email-id">Confirme seu e-mail: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="confirma-email" id="confirma-email-id" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="senha-id">Senha: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" name="senha" id="senha-id" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="confirma-senha-id">Confirme sua senha: </label><br>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" name="confirma-senha" id="confirma-senha-id" required>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="cep-id">CEP: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="cep" id="cep-id" placeholder="00000-000" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="logradouro-id">Logradouro: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="logradouro" id="logradouro-id" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="complemento-id">Complemento: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="complemento" id="complemento-id">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="numero-id">Número: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="number" name="numero" id="numero-id" min="0" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="bairro-id">Bairro: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="bairro" id="bairro-id" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="cidade-id">Cidade: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="cidade" id="cidade-id" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="uf-id">UF: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="text" name="uf" id="uf-id" maxlength="2" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="email-id">E-mail: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="email" name="email" id="email-id" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="confirma-email-id">Confirme seu e-mail: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="email" name="confirma-email" id="confirma-email-id" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="senha-id">Senha: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="password" name="senha" id="senha-id" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="confirma-senha-id">Confirme sua senha: </label><br>
-                </div>
-                <div class="col-75">
-                    <input type="password" name="confirma-senha" id="confirma-senha-id" required>
-                </div>
-            </div>
-            <div class="row">
-                <input type="checkbox" name="termos" id="termos-id" required>
+                <div class="row">
+                    <input type="checkbox" name="termos" id="termos-id" required>
                 <label for="termos-id">Concordo com os Termos de Utilização</label>
             </div>
             <div class="row">

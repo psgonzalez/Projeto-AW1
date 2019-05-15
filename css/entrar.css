@@ -1,9 +1,15 @@
-main h1 {
-    font-size: 1.3em;
+#login {
+    height: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+#login h1 {
+    font-size: 20px;
     text-align: center;
 }
 
-input[type=text], input[type=number], input[type=email], input[type=password] 
+#login input[type=email], input[type=password] 
 {
     width: 100%;
     padding 12px;
@@ -14,17 +20,24 @@ input[type=text], input[type=number], input[type=email], input[type=password]
     text-align: center;
 }
 
-label {
+#login label {
     padding 12px 12px 12px 0;
     margin-top: 10px;
     display: inline-block;
 }
 
-label:last-child {
+#login label:last-child {
     margin-bottom: 10px;
 }
 
-main button[type=submit] {
+#login h2 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    padding: 2%;
+}
+
+#login button[type=submit] {
     background-color: #DD1C1A;
     color: black;
     padding: 12px 20px;
@@ -33,10 +46,6 @@ main button[type=submit] {
     cursor: pointer;
     margin: 0 auto;
     display: block;
-}
-
-.formulario {
-    padding: 20px;
 }
 
 .col-25 {
@@ -61,17 +70,5 @@ main button[type=submit] {
     .col-25, .col-75, button[type=submit] {
         width: 100%;
         margin-top: 0; 
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #campos {
-        margin-left: 0;
-    }
-}
-
-@media screen and (min-width: 601px) {
-    #campos {
-        margin-left: 35%;
     }
 }
