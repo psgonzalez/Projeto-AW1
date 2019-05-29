@@ -27,9 +27,9 @@
         </nav>
     </header>
     <main>
-        <div id="login">
-            <h1>Entre com os seus dados</h1>
-            <form action=".">
+        <h1>Entre com os seus dados</h1>
+        <form action=".">
+            <div id="login">
                 <div class="row">
                     <div class="col-25">
                         <label for="email-id">E-mail </label><br>
@@ -47,16 +47,36 @@
                     </div>
                 </div>
                 <div class="row">
-                    <h2>Esqueceu sua senha?</h2>
+                    <a id="esqueceusenha"><h2>Esqueceu sua senha?</h2></a>
                 </div>
                 <div class="row">
-                    <h2>Não possui uma conta? Crie agora</h2>
+                    <a id="naopossuiconta" href="cadastro.html"><h2>Não possui uma conta? Crie agora</h2></a>
                 </div>
                 <div class="row">
                     <button type="submit">Entrar</button>
                 </div>
+            </div>
             </form>
-        </div>
     </main>
+    <div id="esqueceu-senha">
+        <h1>Digite seu e-mail para recuperar sua senha</h1>
+        <form action=".">
+            <div class="row">
+                <div class="col-25">
+                    <label for="email-id">E-mail</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" name="email" id="email-id" required>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/entrar.js"></script>
     </body>
     </html>
