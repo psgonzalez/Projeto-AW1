@@ -1,15 +1,25 @@
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
 #login {
     height: 50%;
     margin: 0 auto;
     display: block;
 }
 
-#login h1 {
-    font-size: 20px;
-    text-align: center;
+a, a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
 }
 
-#login input[type=email], input[type=password] 
+#esqueceusenha {
+    cursor: pointer;
+}
+
+input[type=email], input[type=password] 
 {
     width: 100%;
     padding 12px;
@@ -20,13 +30,13 @@
     text-align: center;
 }
 
-#login label {
+label {
     padding 12px 12px 12px 0;
     margin-top: 10px;
     display: inline-block;
 }
 
-#login label:last-child {
+label:last-child {
     margin-bottom: 10px;
 }
 
@@ -66,9 +76,45 @@
     clear: both;
 }
 
+#esqueceu-senha {
+    background-color: #2ABF5E;
+    word-wrap: break-word;
+    margin-top: 15px;
+    height: 60vh;
+    display: none;
+}
+
+#esqueceu-senha input[type=email] {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+}
+
+#esqueceu-senha button[type=submit]{
+    background-color: #1C8741;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
 @media screen and (max-width: 600px) {
     .col-25, .col-75, button[type=submit] {
         width: 100%;
         margin-top: 0; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #login {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    #login {
+        margin-left: 30%;
     }
 }
