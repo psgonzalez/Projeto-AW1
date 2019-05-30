@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comprar.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <title>Compra</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <button class="btn-menu">
+            <img class="menu-icon" src="img/menu.png" alt="">
+        </button>
+        <nav class="menu">
+            <a class="btn-close">X</a>
+            <ul>
+                <li><a href="home.html">Untitled Goose Game</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section1">
+
+        <div class="imagem">
+            <img src="img/logo-game.png" alt="">
+        </div>
+
+
+        <div class="informacao">
+
+            <p>Untitled Goose Game</p>
+            <p>R$59,90</p>
+
+
+        </div>
+
+        <button type="submit" id="botao-comprar">
+            <img src="./img/comprar.png" alt="">
+            <p>Comprar</p>
+
+        </button>
+
+
+    </section>
+
+    <section id="section2">
+
+        <p>Selecione a plataforma desejada:</p>
+
+        <div class="clearfix">
+            <div class="plataforma">
+                <button type="button">
+                    <img src="./img/nintendo-switch(1).png" alt="">
+                </button>
+                <p>Nintendo Switch</p>
+            </div>
+
+            <div class="plataforma">
+                <button type="button">
+                    <img src="./img/monitor.png" alt="">
+                </button>
+                <p>Computador</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="section3">
+
+        <p>
+            Informe o seu CEP para calcular o frete e o prazo de entrega
+        </p>
+
+        <input type="text" onkeypress="$(this).mask('00.000-000')">
+
+        <button id="botao-frete">
+            <p>Calcular</p>
+        </button>
+
+    </section>
+
+
+
+
+</body>
+
+</html>

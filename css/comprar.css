@@ -1,0 +1,153 @@
+section{
+    padding: 5%;
+    /* position: absolute; */
+}
+
+section p{
+    /* vertical-align: sub; */
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+}
+
+/*SEÇÃO 1*/
+
+.imagem img {
+    float: left;
+    width: 40%;
+    height:40%;
+
+}
+
+.informacao p:first-of-type {
+    margin-top: 25%;
+    /* line-height: 50%; */
+}
+
+#botao-comprar {
+    background-color: #DD1C1A;
+    color: black;
+    padding: 5% 8%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+    /* margin-top: 10%; */
+    display: block;
+
+}
+
+#botao-comprar p {
+    /* position: relative; */
+    /* line-height: 50%; */
+    margin-top:10%;
+    /* margin-bottom: 50%; */
+}
+
+#botao-comprar img{
+    float:left;
+    width:20%;
+    height: 20%;
+}
+
+/*SEÇÃO 2*/
+
+#section2 {
+    /* position: absolute; */
+    background-color: #2ABF5E;
+}
+
+#section2 button{
+    background-color: inherit;
+    /* float: left; */
+    width:auto;
+    height: auto;
+}
+
+#section2 img:hover{
+    width: 100%;
+}
+
+
+#section2 button:focus{
+    border:1px red solid;
+    border-radius:10px;
+    width:100%;
+}
+
+
+#section2 img{
+    transition: width 2s;
+    width: 70%;
+    height: 70%;
+}
+
+.plataforma{
+    text-align: center;
+    width: 50%;
+    /* padding-top:0; */
+    padding: 5%;
+    float:left;
+    /* box-sizing: border-box; */
+}
+
+.clearfix{
+    padding-top:0;
+    padding-bottom: 0; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+/*SEÇÃO 3*/
+#section3 {
+    background-color: #FAA300;
+}
+
+input{
+    margin-top:5%;
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    resize: vertical;
+    background-color: rgba(196,196,196,0.5);
+    text-align: center;
+    font-size: 20px;
+}
+
+input:focus{
+    border: 3px solid #555;
+
+}
+
+#botao-frete{
+    background-color: #C97200;
+    color: black;
+    padding: 5% 8%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    /* margin: 0 auto; */
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+    margin-left: 30%;
+}
+
+@media screen and (min-width:1024px){
+
+    section p{
+        font-size: 50px;
+    }
+
+    input{
+        font-size:40px;
+    }
+
+}

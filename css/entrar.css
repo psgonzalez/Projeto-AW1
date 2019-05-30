@@ -22,7 +22,7 @@ a, a:visited {
 input[type=email], input[type=password] 
 {
     width: 100%;
-    padding 12px;
+    /* padding: 12px; */
     border: 1px solid #ccc;
     border-radius: 15px;
     resize: vertical;
@@ -31,7 +31,7 @@ input[type=email], input[type=password]
 }
 
 label {
-    padding 12px 12px 12px 0;
+    padding: 12px 12px 12px 0;
     margin-top: 10px;
     display: inline-block;
 }
