@@ -40,6 +40,7 @@ table caption {
     width: 50vw;
     margin-top: 8%;
     margin-bottom: 8%;
+    cursor: pointer;
 }
 
 .identificacao button:last-child {

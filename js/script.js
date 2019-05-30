@@ -1,7 +1,7 @@
 $(".btn-menu").click(function() {
-    $(".menu").show()
+    $(".menu").slideDown(500)
 });
 
 $(".btn-close").click(function() {
-    $(".menu").hide()
+    $(".menu").slideUp(500)
 });

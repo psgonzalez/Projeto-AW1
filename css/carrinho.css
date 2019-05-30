@@ -1,0 +1,118 @@
+.carrinho {
+    height: 20%;
+    margin-bottom: 10%;
+    display: inline-flexbox;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2%;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+table caption {
+    font-size: 1.3em;
+    margin-bottom: 3%;
+}
+
+.pagamento {
+    height: 66vh;
+    width: 100%;
+    background-color: #ffffff;
+    display: table;
+}
+
+.pagamento h1 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.pagamento button {
+    background-color: #DD1C1A;
+    border-radius: 15px;
+    height: 10vh;
+    width: 50vw;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    /* margin-bottom: 2%; */
+}
+
+
+input[type=text], input[type=number]
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    resize: vertical;
+    background-color: rgba(196,196,196,0.5);
+    text-align: center;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+label:last-child {
+    margin-bottom: 10px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#dados-cartao {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    
+    table{
+        font-size: 24px;
+    }
+
+    th, td {
+        font-size: 22px;
+    }
+
+    .pagamento button {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, button[type=submit] {
+        width: 100%;
+        margin-top: 0; 
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .formulario {
+        margin-left: 35%;
+    }
+}

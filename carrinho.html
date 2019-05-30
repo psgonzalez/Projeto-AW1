@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lucas Ivars Cadima Ciziks e Paula Silva Gonzalez">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Seu carrinho</title>
+
+<body>
+    <!--Criação do menu-->
+    <header class="container">
+        <button class="btn-menu">
+            <img class="menu-icon" src="img/menu.png" alt="">
+        </button>
+        <nav class="menu">
+            <a class="btn-close">X</a>
+            <ul>
+                <li><a href="home.html">Untitled Goose Game</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Criação da tabela de produto-->
+    <div class="carrinho">
+        <table>
+            <caption>Seu carrinho</caption>
+            <tr>
+                <th>Produto</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Untitled Goose Game - Computador</td>
+                <td>R$ 59,90</td>
+            </tr>
+        </table>
+    </div>
+    <!--Identificação para efetuar o pagamento-->
+    <div class="pagamento">
+        <div class="opcoes-pg">
+            <h1>Escolha sua forma de pagamento</h1>
+            <div class="formulario">
+                <form action="">
+                    <div class="row">
+                        <input type="radio" name="opcao" id="op-c"">
+                        <label for="op-c">Cartão de crédito</label>
+                    </div>
+                    <div id="dados-cartao">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="numero-cartao">Número do cartão</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" name="numero" id="numero-cartao">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="titular-cartao">Titular do cartão</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" name="titular" id="titular-cartao">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="radio" name="opcao" id="op-b"">
+                        <label for="op-b">Boleto bancário</label>
+                    </div>
+                </form>
+            </div>
+            <button type="submit">Avançar</button>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carrinho.js"></script>
+</body>
+
+</html>
