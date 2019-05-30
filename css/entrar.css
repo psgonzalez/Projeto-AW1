@@ -3,7 +3,7 @@ h1 {
     text-align: center;
 }
 
-#login {
+.login {
     height: 50%;
     margin: 0 auto;
     display: block;
@@ -40,23 +40,6 @@ label:last-child {
     margin-bottom: 10px;
 }
 
-#login h2 {
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
-    padding: 2%;
-}
-
-#login button[type=submit] {
-    background-color: #DD1C1A;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-}
 
 .col-25 {
     float: left;
@@ -76,10 +59,29 @@ label:last-child {
     clear: both;
 }
 
+#recuperar-dados h2 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    padding: 2%;
+}
+
+#recuperar-dados button[type=submit] {
+    background-color: #DD1C1A;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
 #esqueceu-senha {
     background-color: #2ABF5E;
     word-wrap: break-word;
     margin-top: 15px;
+    padding-top: 10%;
     height: 60vh;
     display: none;
 }
@@ -108,13 +110,17 @@ label:last-child {
 }
 
 @media screen and (max-width: 600px) {
-    #login {
+    .login {
         margin-left: 0;
     }
 }
 
 @media screen and (min-width: 601px) {
-    #login {
+    #content {
+        padding-top: 12%;
+    }
+    
+    .login {
         margin-left: 30%;
     }
 }

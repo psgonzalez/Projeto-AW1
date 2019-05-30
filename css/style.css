@@ -67,6 +67,7 @@
     font-size: 2em;
     color: #fff;
     padding: 1.5% 3%;
+    text-decoration: none;
 }
 
 .menu li a:hover{

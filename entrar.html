@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="author" content="Lucas Ivars Cadima Ciziks e Paula Silva Gonzalez">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/entrar.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-        <title>Entrar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lucas Ivars Cadima Ciziks e Paula Silva Gonzalez">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/entrar.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Entrar</title>
 </head>
+
 <body>
     <!--Criação do menu-->
     <header class="container">
@@ -19,17 +21,17 @@
         <nav class="menu">
             <a class="btn-close">X</a>
             <ul>
-                <li><a href="home.html">Untitled Goose Game</a></li>                    
+                <li><a href="home.html">Untitled Goose Game</a></li>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
                 <li><a href="comprar.html">Comprar</a></li>
                 <li><a href="sobre-nos.html">Sobre nós</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="content">
         <h1>Entre com os seus dados</h1>
         <form action=".">
-            <div id="login">
+            <div class="login">
                 <div class="row">
                     <div class="col-25">
                         <label for="email-id">E-mail </label><br>
@@ -46,27 +48,33 @@
                         <input type="password" name="senha" id="senha-id" required>
                     </div>
                 </div>
-                <div class="row">
-                    <a id="esqueceusenha"><h2>Esqueceu sua senha?</h2></a>
-                </div>
-                <div class="row">
-                    <a id="naopossuiconta" href="cadastro.html"><h2>Não possui uma conta? Crie agora</h2></a>
-                </div>
-                <div class="row">
-                    <button type="submit">Entrar</button>
-                </div>
             </div>
-            </form>
+        </form>
+        <div id="recuperar-dados" class="row">
+            <a id="esqueceusenha">
+                <h2>Esqueceu sua senha?</h2>
+            </a>
+            <div class="row">
+                <a href="cadastro.html">
+                    <h2>Não possui uma conta? Crie agora</h2>
+                </a>
+            </div>
+            <div class="row">
+                <button type="submit">Entrar</button>
+            </div>
+        </div>
     </main>
     <div id="esqueceu-senha">
         <h1>Digite seu e-mail para recuperar sua senha</h1>
         <form action=".">
-            <div class="row">
-                <div class="col-25">
-                    <label for="email-id">E-mail</label>
-                </div>
-                <div class="col-75">
-                    <input type="email" name="email" id="email-id" required>
+            <div class="login">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email-id">E-mail</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" id="email-id" required>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -78,5 +86,6 @@
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/entrar.js"></script>
-    </body>
-    </html>
+</body>
+
+</html>
