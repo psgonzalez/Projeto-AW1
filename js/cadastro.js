@@ -60,3 +60,8 @@ $(document).ready(function() {
         }
     });
 });
+
+$("#btn-enviar").on('click', function(){
+    alert("Você está cadastrado!\nClique em 'OK' para ser redirecionado para a página principal.");
+    $(location).attr('href', 'home.html');
+});
