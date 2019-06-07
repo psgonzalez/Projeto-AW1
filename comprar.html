@@ -29,31 +29,34 @@
         </nav>
     </header>
 
-    <section id="section1">
+    <div id="section1">
 
         <div class="imagem">
             <img src="img/logo-game.png" alt="">
         </div>
 
 
-        <div class="informacao">
+        <div id="info">
 
-            <p>Untitled Goose Game</p>
-            <p>R$59,90</p>
+            <!-- <div class="informacao"> -->
 
+                <p>Untitled Goose Game</p>
+                <p>R$59,90</p>
+
+
+            <!-- </div> -->
+
+            <button type="submit" id="botao-comprar" onclick="$(location).attr('href','pagamento.html')">
+                <img src="./img/comprar.png" alt="">
+                <p>Comprar</p>
+
+            </button>
 
         </div>
 
-        <button type="submit" id="botao-comprar" onclick="$(location).attr('href','pagamento.html')">
-            <img src="./img/comprar.png" alt="">
-            <p>Comprar</p>
+    </div>
 
-        </button>
-
-
-    </section>
-
-    <section id="section2">
+    <div id="section2">
 
         <p>Selecione a plataforma desejada:</p>
 
@@ -74,9 +77,9 @@
         </div>
 
 
-    </section>
+    </div>
 
-    <section id="section3">
+    <div id="section3">
 
         <p>
             Informe o seu CEP para calcular o frete e o prazo de entrega
@@ -88,7 +91,7 @@
             <p>Calcular</p>
         </button>
 
-    </section>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>

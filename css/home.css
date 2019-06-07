@@ -175,3 +175,18 @@ iframe {
          margin: 0 auto;
      }
  }
+
+ @media screen and (min-width: 1024px) {
+     
+ #imagens img{
+    border-radius: 10%;
+    border: rgba(221,28,26,0.6) 3px solid;
+    /* float: left; */
+   width: 70%;
+   /* height: 60%; */
+   /* margin-top: 2%; */
+   margin: 2% auto;
+   display: block;
+   /* margin: 2%; */
+}
+ }

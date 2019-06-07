@@ -1,9 +1,10 @@
-section{
+
+#section1, #section2, #section3 {
     padding: 5%;
     /* position: absolute; */
 }
 
-section p{
+div p{
     /* vertical-align: sub; */
     word-wrap: break-word;
     text-align: center;
@@ -13,17 +14,45 @@ section p{
 
 /*SEÇÃO 1*/
 
+#section1 {
+    /* padding: 0; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* flex-basis: 100%; */
+}
+
+#imagem {
+    display: inherit;
+    flex-basis: 100%;
+    float: left;
+}
+
 .imagem img {
     float: left;
-    width: 40%;
-    height:40%;
+    /* flex: content; */
+    width: 100%;
+    flex-basis: 50%;
+    /* height:40%; */
 
 }
 
-.informacao p:first-of-type {
-    margin-top: 25%;
+#info {
+    /* flex-basis: 100%; */
+    /* margin-left: 10%; */
+    flex-direction: column;
+    align-content: space-between;
+    align-self: flex-end;
+    float: right;
+}
+
+/* .informacao p:first-of-type { */
+    /* margin-top: 25%; */
     /* line-height: 50%; */
-}
+/* } */
 
 #botao-comprar {
     background-color: #DD1C1A;
@@ -34,7 +63,7 @@ section p{
     cursor: pointer;
     margin: 0 auto;
     /* margin-top: 10%; */
-    display: block;
+    /* display: block; */
 
 }
 
@@ -142,7 +171,7 @@ input:focus{
 
 @media screen and (min-width:1024px){
 
-    section p{
+    div p{
         font-size: 50px;
     }
 
