@@ -1,5 +1,5 @@
 
-#section1, #section2, #section3 {
+#section1, #section2, #section3, #section4 {
     padding: 5%;
     /* position: absolute; */
 }
@@ -12,13 +12,17 @@ div p{
     width: 100%;
 }
 
+.clearfix p {
+    word-wrap: normal;
+}
+
 /*SEÇÃO 1*/
 
 #section1 {
     /* padding: 0; */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-content: space-between;
     align-items: center;
     width: 100%;
@@ -27,7 +31,8 @@ div p{
 
 #imagem {
     display: inherit;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+    width: 50%;
     float: left;
 }
 
@@ -70,7 +75,10 @@ div p{
 #botao-comprar p {
     /* position: relative; */
     /* line-height: 50%; */
-    margin-top:10%;
+    /* margin-top:8%; */
+    padding-top: 5%;
+    /* margin: auto 2%; */
+    /* display: block; */
     /* margin-bottom: 50%; */
 }
 
@@ -163,10 +171,48 @@ input:focus{
     border-radius: 15px;
     cursor: pointer;
     /* margin: 0 auto; */
-    margin-top: 5%;
+    margin: 5% auto;
     display: block;
     text-align: center;
-    margin-left: 30%;
+    /* margin-left: 30%; */
+}
+
+/* SEÇÃO 4 */
+#section4 {
+    display: none;
+}
+
+table {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2%;
+    text-align: center;
+}
+
+
+table caption {
+    font-size: 1.3em;
+    margin-bottom: 3%;
+}
+
+#section4 input {
+    background-color: #ffffff;
+    border: #ffffff;
+}
+
+@media screen and (min-width: 600px) {
+    table{
+        font-size: 24px;
+    }
+
+    th, td, span {
+        font-size: 22px;
+    }
 }
 
 @media screen and (min-width:1024px){

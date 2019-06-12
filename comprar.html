@@ -85,17 +85,32 @@
             Informe o seu CEP para calcular o frete e o prazo de entrega
         </p>
 
-        <input type="text" onkeypress="$(this).mask('00.000-000')">
+        <input type="text" onkeypress="$(this).mask('00.000-000')" id="cep-id">
 
         <button id="botao-frete">
             <p>Calcular</p>
         </button>
 
     </div>
+
+    <div id="section4">
+        <table>
+            <caption>Preços</caption>
+            <tr>
+                <th>Endereço</th>
+                <th>Frete</th>
+            </tr>
+            <tr>
+                <td><span id="endereco"></span></td>
+                <td>Frete grátis</td>
+            </tr>
+        </table>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/comprar.js"></script>
 </body>
 
 </html>
