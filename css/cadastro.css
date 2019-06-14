@@ -24,7 +24,7 @@ label:last-child {
     margin-bottom: 10px;
 }
 
-main button[type=submit] {
+main button[type=button] {
     background-color: #DD1C1A;
     color: black;
     padding: 12px 20px;

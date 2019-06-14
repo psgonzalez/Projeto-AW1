@@ -49,6 +49,18 @@ span {
     font-weight: bold;
 }
 
+.no-bold {
+    font-weight: normal;
+}
+
+.cartao {
+    display: none;
+}
+
+.boleto {
+    display: none;
+}
+
 @media screen and (min-width: 600px) {
     
     table{

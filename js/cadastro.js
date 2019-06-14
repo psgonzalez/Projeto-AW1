@@ -61,7 +61,32 @@ $(document).ready(function() {
     });
 });
 
+// Função que armazena temporariamente os valores cadastrados
+$("#btn-enviar").click(function() {
+    var nome = $("#nome-id").val();
+    var cep = $("#cep-id").val()
+    var logradouro = $("#logradouro-id").val()
+    var numero = $("#numero-id").val()
+    var complemento = $("#complemento-id").val()
+    var bairro = $("#bairro-id").val()
+    var cidade = $("#cidade-id").val()
+    var uf = $("#uf-id").val()
+    var email = $("#email-id").val()
+
+    localStorage.setItem("nome", nome);
+    localStorage.setItem("cep", cep);
+    localStorage.setItem("logradouro", logradouro);
+    localStorage.setItem("numero", numero);
+    localStorage.setItem("complemento", complemento);
+    localStorage.setItem("bairro", bairro);
+    localStorage.setItem("cidade", cidade);
+    localStorage.setItem("uf", uf);
+    localStorage.setItem("email", email);
+});
+
+// Alerta de cadastro bem sucedido
 $("#btn-enviar").on('click', function(){
     alert("Você está cadastrado!\nClique em 'OK' para ser redirecionado para a página principal.");
     $(location).attr('href', 'home.html');
 });
+

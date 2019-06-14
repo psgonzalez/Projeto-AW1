@@ -1,3 +1,5 @@
+// Cálculo de frete e API viacep
+
 $(document).ready(function() {
 
     var end = document.getElementById("endereco");
@@ -53,6 +55,32 @@ $(document).ready(function() {
     });
 });
 
-$("#botao-frete").click(function() {
-    $("#section4").slideDown(500)
+
+// Animação div de frete
+
+$('#botao-frete').on('click', function() {
+    // Div frete visível
+    $("#section4").show();
+
+    // Altera a posição para top e adiciona animação para a transição
+    const frete = $('#section4').position().top;
+    $('html, body').animate({
+        scrollTop: frete
+    }, 1500);
+});
+
+// Função que armazena o tipo da plataforma de acordo com o botão clicado
+$("button").click(function(){
+
+    // Recebe o valor do botão
+    var valor = $(this).val();
+    if(valor == "pc"){
+        // Armazena o valor 'Computador'
+        localStorage.setItem("plataforma", "Computador");
+    }
+    else {
+        // Armazena o valor 'Nintendo Switch'
+        localStorage.setItem("plataforma", "Nintendo Switch");
+    }
+        
 });

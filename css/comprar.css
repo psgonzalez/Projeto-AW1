@@ -23,8 +23,8 @@ div p{
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    align-content: space-between;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     width: 100%;
     /* flex-basis: 100%; */
 }
@@ -108,7 +108,8 @@ div p{
 
 
 #section2 button:focus{
-    border:1px red solid;
+    /* border:1px red solid; */
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius:10px;
     width:100%;
 }
@@ -180,6 +181,7 @@ input:focus{
 /* SEÇÃO 4 */
 #section4 {
     display: none;
+    background-color: #1C77C3;
 }
 
 table {
@@ -225,4 +227,9 @@ table caption {
         font-size:40px;
     }
 
+    .imagem {
+        width: 30%;
+        /* align-self: center; */
+        margin-left: 8%;
+    }
 }

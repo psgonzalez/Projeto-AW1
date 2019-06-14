@@ -5,7 +5,7 @@
 }
 
 
-table, th, td {
+table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
     padding: 2%;
@@ -59,7 +59,7 @@ table caption {
         font-size: 24px;
     }
 
-    th, td {
+    th, td, span {
         font-size: 22px;
     }
 

@@ -48,7 +48,7 @@
             <div class="formulario">
                 <form action="POST">
                     <div class="row">
-                        <input type="radio" name="opcao" id="op-c">
+                        <input type="radio" name="opcao" id="op-c" value="cartao">
                         <label for="op-c">Cartão de crédito</label>
                     </div>
                     <div id="dados-cartao">
@@ -57,7 +57,7 @@
                                 <label for="numero-cartao">Número do cartão</label>
                             </div>
                             <div class="col-75">
-                                <input type="number" name="numero" id="numero-cartao">
+                                <input type="number" name="numero" id="numero-cartao" required>
                             </div>
                         </div>
                         <div class="row">
@@ -65,17 +65,17 @@
                                 <label for="titular-cartao">Titular do cartão</label>
                             </div>
                             <div class="col-75">
-                                <input type="text" name="titular" id="titular-cartao">
+                                <input type="text" name="titular" id="titular-cartao" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <input type="radio" name="opcao" id="op-b">
+                        <input type="radio" name="opcao" id="op-b" value="boleto">
                         <label for="op-b">Boleto bancário</label>
                     </div>
                 </form>
             </div>
-            <button type="submit">Avançar</button>
+            <button type="submit" id="btn-avancar">Avançar</button>
         </div>
     </div>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
