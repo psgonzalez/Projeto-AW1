@@ -15,11 +15,26 @@ $(document).ready(function () {
     $("#uf").append(localStorage.getItem("uf"));
     $("#email").append(localStorage.getItem("email"));
 
-    if(localStorage.getItem("forma") == "cartao") {
-        $(".cartao").css("display", "block");
+    // Checa a opção de pagamento
+    value = localStorage.getItem("forma");
+
+    // Caso seja boleto bancário
+    if(value == "Boleto bancário") {
+        // var boleto = document.getElementsByClassName("boleto")
+        // boleto.style.display = "block";
+
+        // Altera o display da classe boleto para block
+        $(".boleto").css('display', 'block');
     }
     else {
-        $(".boleto").css("display", "block");
+        var cartao = [];
+        // Resgata os elementos com a classe cartao
+        cartao =  document.getElementsByClassName("cartao");
+
+        // Altera o display dos elementos para block
+        for(i = 0; i < cartao.length; i++) {
+            cartao[i].style.display = "block";
+        }
     }
 });
 

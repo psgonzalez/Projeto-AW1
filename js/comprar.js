@@ -70,7 +70,7 @@ $('#botao-frete').on('click', function() {
 });
 
 // Função que armazena o tipo da plataforma de acordo com o botão clicado
-$("button").click(function(){
+$(".plat").click(function(){
 
     // Recebe o valor do botão
     var valor = $(this).val();

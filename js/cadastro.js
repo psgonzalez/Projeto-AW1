@@ -1,6 +1,6 @@
 //Webservice de consulta de CEP do viacep.com.br
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     function limpa_formulário_cep() {
         // Limpa valores do formulário de cep.
@@ -9,9 +9,9 @@ $(document).ready(function() {
         $("#cidade-id").val("");
         $("#uf-id").val("");
     }
-    
+
     //Quando o campo cep perde o foco.
-    $("#cep-id").blur(function() {
+    $("#cep-id").blur(function () {
 
         //Nova variável "cep" somente com dígitos.
         var cep = $(this).val().replace(/\D/g, '');
@@ -23,7 +23,7 @@ $(document).ready(function() {
             var validacep = /^[0-9]{8}$/;
 
             //Valida o formato do CEP.
-            if(validacep.test(cep)) {
+            if (validacep.test(cep)) {
 
                 //Preenche os campos com "..." enquanto consulta webservice.
                 $("#logradouro-id").val("...");
@@ -32,7 +32,7 @@ $(document).ready(function() {
                 $("#uf-id").val("...");
 
                 //Consulta o webservice viacep.com.br/
-                $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
+                $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
 
                     if (!("erro" in dados)) {
                         //Atualiza os campos com os valores da consulta.
@@ -61,8 +61,40 @@ $(document).ready(function() {
     });
 });
 
+function validaEmail(){
+    var email = $("#email-id").val();
+    var confirma = $("#confirma-email-id").val();
+
+    if(email == confirma) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function validaSenha() {
+    var senha = $("#senha-id").val();
+    var confirma = $("#confirma-senha-id").val();
+
+    if(senha.length < 8) {
+        alert("Senha deve ter no mínimo 8 caracteres")
+        return false;
+    } else {
+        if(confirma == senha) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+
 // Função que armazena temporariamente os valores cadastrados
-$("#btn-enviar").click(function() {
+$("#btn-enviar").click(function () {
+
+    // Checa, primeiramente, se os e-mails são iguais
+    if (validaEmail() == true && validaSenha() == true) {
     var nome = $("#nome-id").val();
     var cep = $("#cep-id").val()
     var logradouro = $("#logradouro-id").val()
@@ -72,6 +104,7 @@ $("#btn-enviar").click(function() {
     var cidade = $("#cidade-id").val()
     var uf = $("#uf-id").val()
     var email = $("#email-id").val()
+    var senha = $("#senha-id").val();
 
     localStorage.setItem("nome", nome);
     localStorage.setItem("cep", cep);
@@ -82,11 +115,13 @@ $("#btn-enviar").click(function() {
     localStorage.setItem("cidade", cidade);
     localStorage.setItem("uf", uf);
     localStorage.setItem("email", email);
-});
+    localStorage.setItem("senha", senha);
 
-// Alerta de cadastro bem sucedido
-$("#btn-enviar").on('click', function(){
     alert("Você está cadastrado!\nClique em 'OK' para ser redirecionado para a página principal.");
     $(location).attr('href', 'home.html');
+    }
+    else {
+        alert("E-mail e/ou senha inválidos");
+    }
 });
 
