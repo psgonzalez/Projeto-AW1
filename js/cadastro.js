@@ -69,6 +69,7 @@ function validaEmail(){
         return true;
     }
     else {
+       document.getElementById("email-id").style.border = "solid red 3px";
         return false;
     }
 }
@@ -85,6 +86,7 @@ function validaSenha() {
             return true;
         }
         else {
+            document.getElementById("senha-id").style.border = "solid red 3px";
             return false;
         }
     }

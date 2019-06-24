@@ -61,11 +61,6 @@ span {
     display: none;
 }
 
-/* 
-#num-cartao, #titular-cartao, #nome {
-    display: none;
-} */
-
 @media screen and (min-width: 600px) {
     
     table{
