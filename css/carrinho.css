@@ -1,7 +1,6 @@
 .carrinho {
     height: 20%;
     margin-bottom: 10%;
-    display: inline-flexbox;
 }
 
 
@@ -101,17 +100,15 @@ label:last-child {
     .pagamento button {
         margin-top: 5%;
     }
+
+    .formulario {
+        margin-left: 35%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .col-25, .col-75, button[type=submit] {
         width: 100%;
         margin-top: 0; 
-    }
-}
-
-@media screen and (min-width: 601px) {
-    .formulario {
-        margin-left: 35%;
     }
 }

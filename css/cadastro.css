@@ -3,7 +3,7 @@ main h1 {
     text-align: center;
 }
 
-input[type=text], input[type=number], input[type=email], input[type=password] 
+.input
 {
     width: 100%;
     padding: 12px;
@@ -40,17 +40,17 @@ main button[type=button] {
     padding: 20px;
 }
 
-.col-25 {
+.col {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
 
-.col-75 {
+/* .col-75 {
     float: left;
     width: 25%;
     margin-top: 6px;
-}
+} */
 
 .row::after {
     content: "";
@@ -59,7 +59,7 @@ main button[type=button] {
 }
 
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, button[type=submit] {
+    .col, button[type=submit] {
         width: 100%;
         margin-top: 0; 
     }

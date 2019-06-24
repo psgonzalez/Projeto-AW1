@@ -3,7 +3,7 @@
     padding: 5%;
 }
 
-div p{
+.span-p{
     word-wrap: break-word;
     text-align: center;
     font-size: 20px;
@@ -53,7 +53,7 @@ div p{
     margin: 0 auto;
 }
 
-#botao-comprar p {
+#span-p {
     padding-top: 5%;
 }
 
@@ -189,7 +189,7 @@ table caption {
 
 @media screen and (min-width:1024px){
 
-    div p{
+    .span-p{
         font-size: 50px;
     }
 

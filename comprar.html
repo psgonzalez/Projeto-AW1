@@ -40,15 +40,15 @@
 
             <!-- <div class="informacao"> -->
 
-                <p>Untitled Goose Game</p>
-                <p>R$59,90</p>
+                <p class="span-p">Untitled Goose Game</p>
+                <p class="span-p">R$59,90</p>
 
 
             <!-- </div> -->
 
             <button type="submit" id="botao-comprar" onclick="$(location).attr('href','pagamento.html')">
                 <img src="./img/comprar.png" alt="">
-                <p>Comprar</p>
+                <span class="span-p">Comprar</span>
 
             </button>
 
@@ -58,21 +58,21 @@
 
     <div id="section2">
 
-        <p>Selecione a plataforma desejada:</p>
+        <p class="span-p">Selecione a plataforma desejada:</p>
 
         <div class="clearfix">
             <div class="plataforma">
                 <button id="ns" type="button" value="ns" class="plat">
                     <img src="./img/nintendo-switch(1).png" alt="">
                 </button>
-                <p>Nintendo Switch</p>
+                <p class="span-p">Nintendo Switch</p>
             </div>
 
             <div class="plataforma">
                 <button id="pc" type="button" value="pc" class="plat">
                     <img src="./img/monitor.png" alt="">
                 </button>
-                <p>Computador</p>
+                <p class="span-p">Computador</p>
             </div>
         </div>
 
@@ -81,14 +81,14 @@
 
     <div id="section3">
 
-        <p>
+        <p class="span-p">
             Informe o seu CEP para calcular o frete e o prazo de entrega
         </p>
 
         <input type="text" onkeypress="$(this).mask('00.000-000')" id="cep-id">
 
         <button id="botao-frete">
-            <p>Calcular</p>
+            <span class="span-p">Calcular</span>
         </button>
 
     </div>
