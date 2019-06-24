@@ -53,9 +53,10 @@
     margin: 0 auto;
 }
 
-#span-p {
+/* 
+button .span-p {
     padding-top: 5%;
-}
+} */
 
 #botao-comprar img{
     float:left;
