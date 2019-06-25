@@ -46,11 +46,9 @@ main button[type=button] {
     margin-top: 6px;
 }
 
-/* .col-75 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-} */
+#campos {
+    margin-left: 35%;
+}
 
 .row::after {
     content: "";
@@ -66,12 +64,5 @@ main button[type=button] {
 
     #campos {
         margin-left: 0;
-    }
-}
-
-
-@media screen and (min-width: 601px) {
-    #campos {
-        margin-left: 35%;
     }
 }
