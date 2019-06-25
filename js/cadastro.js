@@ -61,30 +61,43 @@ $(document).ready(function () {
     });
 });
 
-function validaEmail(){
+// Função para validar o email
+function validaEmail() {
+    // Variável email recebe o valor inserido
     var email = $("#email-id").val();
+    // Variável confirma recebe o valor inserido
     var confirma = $("#confirma-email-id").val();
 
-    if(email == confirma) {
+    // Caso o email seja o mesmo, retorna verdadeiro
+    if (email == confirma) {
         return true;
     }
+    // Caso não, muda o estilo do campo e retorna falso
     else {
-       document.getElementById("email-id").style.border = "solid red 3px";
+        document.getElementById("email-id").style.border = "solid red 3px";
         return false;
     }
 }
 
+// Função para validar senha
 function validaSenha() {
+    // Variável senha recebe o valor inserido
     var senha = $("#senha-id").val();
+    // Variável confirma recebe o valor inserido
     var confirma = $("#confirma-senha-id").val();
 
-    if(senha.length < 8) {
+    // Caso a senha seja menor do que 8 caracteres, retorna falso
+    if (senha.length < 8) {
         alert("Senha deve ter no mínimo 8 caracteres")
         return false;
-    } else {
-        if(confirma == senha) {
+    } 
+    // Senão
+    else {
+        // Caso as senhas sejam iguais, retorna true
+        if (confirma == senha) {
             return true;
         }
+        // Senão, altera o estilo do campo senha e retorna falso
         else {
             document.getElementById("senha-id").style.border = "solid red 3px";
             return false;
@@ -92,36 +105,58 @@ function validaSenha() {
     }
 }
 
+// Função que checa se o checkbox dos termos de uso está selecionado
+function validaCheckbox(){
+    // Recebe o estado atual do checkbox: true para checked e false para unchecked
+    const estado = $('input[type=checkbox]').prop('checked');
+
+// Retorna verdadeiro caso o checkbox esteja checado, senão retorna falso
+    return estado
+}
+
+
 // Função que armazena temporariamente os valores cadastrados
 $("#btn-enviar").click(function () {
 
-    // Checa, primeiramente, se os e-mails são iguais
+    // Checa, primeiramente, se os e-mails e as senhas são iguais
     if (validaEmail() == true && validaSenha() == true) {
-    var nome = $("#nome-id").val();
-    var cep = $("#cep-id").val()
-    var logradouro = $("#logradouro-id").val()
-    var numero = $("#numero-id").val()
-    var complemento = $("#complemento-id").val()
-    var bairro = $("#bairro-id").val()
-    var cidade = $("#cidade-id").val()
-    var uf = $("#uf-id").val()
-    var email = $("#email-id").val()
-    var senha = $("#senha-id").val();
 
-    localStorage.setItem("nome", nome);
-    localStorage.setItem("cep", cep);
-    localStorage.setItem("logradouro", logradouro);
-    localStorage.setItem("numero", numero);
-    localStorage.setItem("complemento", complemento);
-    localStorage.setItem("bairro", bairro);
-    localStorage.setItem("cidade", cidade);
-    localStorage.setItem("uf", uf);
-    localStorage.setItem("email", email);
-    localStorage.setItem("senha", senha);
+        // Variáveis recebem os valores dos respectivos campos
+        var nome = $("#nome-id").val();
+        var cep = $("#cep-id").val()
+        var logradouro = $("#logradouro-id").val()
+        var numero = $("#numero-id").val()
+        var complemento = $("#complemento-id").val()
+        var bairro = $("#bairro-id").val()
+        var cidade = $("#cidade-id").val()
+        var uf = $("#uf-id").val()
+        var email = $("#email-id").val()
+        var senha = $("#senha-id").val();
 
-    alert("Você está cadastrado!\nClique em 'OK' para ser redirecionado para a página principal.");
-    $(location).attr('href', 'home.html');
+        // Variáveis são armazenadas localmente
+        localStorage.setItem("nome", nome);
+        localStorage.setItem("cep", cep);
+        localStorage.setItem("logradouro", logradouro);
+        localStorage.setItem("numero", numero);
+        localStorage.setItem("complemento", complemento);
+        localStorage.setItem("bairro", bairro);
+        localStorage.setItem("cidade", cidade);
+        localStorage.setItem("uf", uf);
+        localStorage.setItem("email", email);
+        localStorage.setItem("senha", senha);
+
+        // O cadastro é efetuado caso o checkbox dos termos esteja checado
+        if (validaCheckbox()==true) {
+            alert("Você está cadastrado!\nClique em 'OK' para ser redirecionado para a página principal.");
+            $(location).attr('href', 'home.html');
+        }
+        // Senão, é alertado para o usuário que ele deve concordar com os termos
+        else {
+            alert("Concorde com os termos de utilização da plataforma")
+        }
+
     }
+    // Senão, alerta que o email e/ou senha são inválidos
     else {
         alert("E-mail e/ou senha inválidos");
     }
