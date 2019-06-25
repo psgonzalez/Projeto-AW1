@@ -154,4 +154,9 @@ iframe {
         border: rgba(221,28,26,0.6) 3px solid;
       }
 
+      iframe {
+          width:800px;
+          height:500px;
+      }
+
  }
