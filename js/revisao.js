@@ -38,6 +38,16 @@ $(document).ready(function () {
     }
 });
 
+// Altera conteúdo do span de acordo com a plataforma escolhida
+$(document).ready(function () {
+    // Resgata o elemento span
+    var plat = document.getElementById("plataforma");
+    
+    // Define o conteúdo do span com o valor armazenado no item 'plataforma'
+    plat.textContent = localStorage.getItem("plataforma");
+});
+
+// Pergunta se o usuário deseja confirmar a compra
 $("#confirmacompra").click(function(){
     var result = confirm("Tem certeza que deseja confirmar?\nClique em 'OK' para confirmar e retornar à página principal");
     if(result == true) {
